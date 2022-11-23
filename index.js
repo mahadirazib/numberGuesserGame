@@ -59,7 +59,7 @@ document.querySelector("#check").addEventListener("click", function(){
         // if the counter is 3 and still the guess is not correct then show that the guesses are all wrong.
         // and disable the input field and check button.
         if(window.counter==3){
-            document.querySelector("#showResult").innerHTML = `<h2>Your guesses are wrong!<br>The number was <q> ${window.randomNum} </q> </h2> <button class='retry btn' onclick='retry()'>Retry</button>`;
+            document.querySelector("#showResult").innerHTML = `<h2>Your guesses are wrong!<br>The answer was <q> ${window.randomNum} </q> </h2> <button class='retry btn' onclick='retry()'>Retry</button>`;
             
             document.querySelector("#check").disabled = true;
             document.querySelector("#check").style.cursor = "no-drop";
