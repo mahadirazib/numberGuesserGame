@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Information validation</title>
+</head>
+<body>
+
+    <div class="resultContainer">
+        <h5 style="color: #33c3f0; margin-top: 30px; margin-bottom: 0;"> How many <span id="name">ERROR</span> <span id="person">I</span> <span id="verb">fixed</span> today? </h5>
+        
+        <p style="margin: 0; font-weight: 200;">(This is just a game. It is not based on real life.)</p>
+
+        <h5 style="margin: 0 0 10px 0;">The number is between 1 to 10</h5>
+
+        <div id="showResult"> <h1>Try to guess</h1> </div>
+        <p style="margin: 0;">You have <span id="chances">3 chances</span>.</p>
+        
+    </div>
+
+
+    <div class="takingInput">
+        <form onsubmit="return false">
+            <label for="takingInput" id="takingInputLabel">Enter your opinion: </label> <br>
+            <input type="number" id="takingInput">
+            <br>
+            <button id="check" class="btn">Check</button>
+
+        </form>
+    </div>
+
+
+    <div class="fixedPosition">
+        <h1 class="first">?</h1>
+        <h1 class="second">?</h1>
+        <h1 class="third">GUESS</h1>
+        <h1 class="fourth">GUESS</h1>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

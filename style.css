@@ -1,0 +1,115 @@
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+h1, h2{
+    font-weight: bold;
+    margin: 0;
+}
+
+label{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+
+.btn:hover{
+    border-color: #33c3f0;
+    color: #33c3f0;
+    background-color: #f0f8fa;
+}
+
+.btn:active{
+    background-color: #33c3f0;
+    color: white;
+}
+
+
+
+
+
+
+input[type=number] {
+    width: 200px;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+
+.takingInput{
+    width: 80%;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.resultContainer{
+    width: 80%;
+    margin: 30px auto ;
+    text-align: center;
+}
+
+.retry{
+    color: white;
+    background-color: #3b3b3b;
+    font-size: 20px;
+    border: 1px solid;
+}
+
+
+
+
+
+
+
+
+.fixedPosition .first{
+    font-size: 500px;
+    position: fixed;
+    top: 0;
+    left: 50px;
+    color: rgb(215 241 250);
+    z-index: -3;
+}
+
+.fixedPosition .second{
+    font-size: 500px;
+    position: fixed;
+    top: 0;
+    right: 50px;
+    color: rgb(215 241 250);
+    transform: rotate(180deg);
+    z-index: -3;
+}
+
+.fixedPosition .third{
+    position: fixed;
+    top: 100px;
+    left: calc(50% - 1.5em);
+    color: rgba(10, 64, 85, 0.06);
+    transform: scale(9, 9) rotate(180deg);
+    grid-template-columns: repeat(2, 60px);
+    z-index: -5;
+}
+.fixedPosition .fourth{
+    position: fixed;
+    top: 70%;
+    left: calc(50% - 1.5em);
+    color: rgba(10, 64, 85, 0.06);
+    transform: scale(9, 9);
+    grid-template-columns: repeat(2, 60px);
+    z-index: -5;
+}
